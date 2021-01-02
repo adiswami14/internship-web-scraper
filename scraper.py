@@ -6,10 +6,7 @@ headers = {'User-Agent':
     }
 
 
-internship_loc = input("Where are you searching for an internship?")
-for char in internship_loc:
-    if char == ' ':
-        char = '-'
+internship_loc = input("Where are you searching for an internship? ")
 
 url = 'https://www.monster.com/jobs/search/?q=Software-Developer-Intern&where='+internship_loc #monster job site
 page = requests.get(url, headers = headers)
